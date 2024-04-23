@@ -1,0 +1,10 @@
+---
+
+default: -p pretty -p html -p chrome -p dev
+ci: -p dev -p headless -p pretty -p html
+pretty: --format pretty
+dev: AMBIENTE=dev
+html: --format html --out=report/relatorio.html
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless
